@@ -6,10 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using CCWin;
 
 namespace ExamSystem.UserManage
 {
-    public partial class AddUserFrm : Form
+    public partial class AddUserFrm : Skin_VS
     {
         public AddUserFrm()
         {
@@ -29,9 +30,6 @@ namespace ExamSystem.UserManage
             userFemale.Checked = false;
             userTelTxt.ResetText();
         }
-
-        
-
 
         //检查输入是否合法
         private bool CheckInput()
@@ -85,6 +83,7 @@ namespace ExamSystem.UserManage
             return flag;
         }
 
+        public delegate bool Op();
         //点击添加事件
         private void addBtn_Click(object sender, EventArgs e)
         {
@@ -92,14 +91,31 @@ namespace ExamSystem.UserManage
             {
                 if (CheckInput())
                 {
-                    if (ConnectSql.ChangeData(addUserSqlString()))
+                    Op op = null;
+                    if(this.Text == ("修改用户"))
                     {
-                        MessageBox.Show("创建用户成功");
+                        op = updataDate;
+                    }else if(this.Text == ("我的信息"))
+                    {
+                        op = updataDate;
+                    }
+                    else if(this.Text == ("添加用户"))
+                    {
+                        op = OperatAddUser;
+                    }
+                    if (op())
+                    {
+                        MessageBox.Show("操作成功");
+                        resetBtn.PerformClick();
                     }
                     else
                     {
-                        MessageBox.Show("创建用户失败");
-                    }
+                        MessageBox.Show("操作失败");
+                    }                 
+                }
+                else
+                {
+                    MessageBox.Show("输入不合法");
                 }
             }
             catch(Exception ex)
@@ -108,6 +124,7 @@ namespace ExamSystem.UserManage
             }
             
         }
+
 
         public string addUserSqlString()
         {
@@ -121,6 +138,39 @@ namespace ExamSystem.UserManage
             if (userRoleCbo.Text != "学生") { sqlUserClass = "无"; }
             string sqlString = String.Format("INSERT INTO [dbo].[User] ([userNum] ,[userName],[userPwd],[userGender],[userTel],[userClass],[userRole]) VALUES ('{0}', '{1}', '{2}','{3}', '{4}', '{5}', '{6}')", sqlUserNum, sqlUserName, sqlUserPwd, sqlUserGender, sqlUserTel, sqlUserClass, sqlUserRole);
             return sqlString;
+        }
+
+        public bool updataDate()
+        {
+            bool flag = false;
+            string sqlString = string.Format("UPDATE [dbo].[User] SET[userNum] = '{0}',[userName] = '{1}',[userPwd] = '{2}',[userGender] = '{3}',[userTel] = '{4}',[userClass] = '{5}',[userRole] = '{6}' WHERE userNum = '{0}'; ",
+                     this.userNumTxt.Text,
+                     this.userNameTxt.Text,
+                     this.userPwdTxt.Text,
+                     this.userMan.Checked ? "男" : "女",
+                     this.userTelTxt.Text,
+                     this.userClassCbo.Text == "请选择："?"无": this.userClassCbo.Text,
+                     this.userRoleCbo.Text
+                );
+            if (ConnectSql.ChangeData(sqlString))
+            {
+                flag = true;
+            }
+            return flag;
+        }
+
+        public bool OperatAddUser()
+        {
+            bool flag = false;
+            if (ConnectSql.ChangeData(addUserSqlString()))
+            {
+                flag = true;
+            }
+            else
+            {
+                flag = false;
+            }
+            return flag;
         }
     }
 }

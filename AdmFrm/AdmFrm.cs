@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ExamSystem.UserManage;
+using CCWin;
 
 namespace ExamSystem.AdmFrm
 {
-    public partial class AdmFrm : Form
+    public partial class AdmFrm : Skin_VS
     {
         public AdmFrm()
         {
@@ -31,12 +32,6 @@ namespace ExamSystem.AdmFrm
             addUserFrm.Show();
         }
 
-        private void changeUserBtn_Click(object sender, EventArgs e)
-        {
-            ChangeUserFrm changeUserFrm = new ChangeUserFrm();
-            changeUserFrm.MdiParent = this.MdiParent;
-            changeUserFrm.Show();
-        }
 
         private void selectUserBtn_Click(object sender, EventArgs e)
         {
@@ -45,9 +40,6 @@ namespace ExamSystem.AdmFrm
             searchUserFrm.Show();
         }
 
-        private void userOperatBtn_ButtonClick(object sender, EventArgs e)
-        {
-            
-        }
+
     }
 }

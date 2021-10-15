@@ -46,19 +46,21 @@ namespace ExamSystem
             this.title.AutoSize = true;
             this.title.BackColor = System.Drawing.SystemColors.Window;
             this.title.Font = new System.Drawing.Font("宋体", 47.79832F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.title.Location = new System.Drawing.Point(204, 74);
+            this.title.Location = new System.Drawing.Point(94, 91);
+            this.title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(354, 80);
+            this.title.Size = new System.Drawing.Size(412, 64);
             this.title.TabIndex = 0;
-            this.title.Text = "考试系统";
+            this.title.Text = "政治考试系统";
             // 
             // userLab
             // 
             this.userLab.AutoSize = true;
             this.userLab.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.userLab.Location = new System.Drawing.Point(290, 242);
+            this.userLab.Location = new System.Drawing.Point(220, 224);
+            this.userLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.userLab.Name = "userLab";
-            this.userLab.Size = new System.Drawing.Size(37, 15);
+            this.userLab.Size = new System.Drawing.Size(29, 12);
             this.userLab.TabIndex = 1;
             this.userLab.Text = "账号";
             // 
@@ -66,9 +68,10 @@ namespace ExamSystem
             // 
             this.userRole.AutoSize = true;
             this.userRole.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.userRole.Location = new System.Drawing.Point(290, 322);
+            this.userRole.Location = new System.Drawing.Point(220, 288);
+            this.userRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.userRole.Name = "userRole";
-            this.userRole.Size = new System.Drawing.Size(37, 15);
+            this.userRole.Size = new System.Drawing.Size(29, 12);
             this.userRole.TabIndex = 1;
             this.userRole.Text = "身份";
             // 
@@ -76,24 +79,27 @@ namespace ExamSystem
             // 
             this.pwdLab.AutoSize = true;
             this.pwdLab.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.pwdLab.Location = new System.Drawing.Point(290, 282);
+            this.pwdLab.Location = new System.Drawing.Point(220, 256);
+            this.pwdLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.pwdLab.Name = "pwdLab";
-            this.pwdLab.Size = new System.Drawing.Size(37, 15);
+            this.pwdLab.Size = new System.Drawing.Size(29, 12);
             this.pwdLab.TabIndex = 1;
             this.pwdLab.Text = "密码";
             // 
             // userTxt
             // 
-            this.userTxt.Location = new System.Drawing.Point(343, 239);
+            this.userTxt.Location = new System.Drawing.Point(259, 221);
+            this.userTxt.Margin = new System.Windows.Forms.Padding(2);
             this.userTxt.Name = "userTxt";
-            this.userTxt.Size = new System.Drawing.Size(100, 25);
+            this.userTxt.Size = new System.Drawing.Size(76, 21);
             this.userTxt.TabIndex = 2;
             // 
             // pwdTxt
             // 
-            this.pwdTxt.Location = new System.Drawing.Point(343, 279);
+            this.pwdTxt.Location = new System.Drawing.Point(259, 253);
+            this.pwdTxt.Margin = new System.Windows.Forms.Padding(2);
             this.pwdTxt.Name = "pwdTxt";
-            this.pwdTxt.Size = new System.Drawing.Size(100, 25);
+            this.pwdTxt.Size = new System.Drawing.Size(76, 21);
             this.pwdTxt.TabIndex = 3;
             this.pwdTxt.UseSystemPasswordChar = true;
             // 
@@ -106,17 +112,19 @@ namespace ExamSystem
             "学生",
             "教师",
             "管理员"});
-            this.roleCbo.Location = new System.Drawing.Point(343, 319);
+            this.roleCbo.Location = new System.Drawing.Point(259, 285);
+            this.roleCbo.Margin = new System.Windows.Forms.Padding(2);
             this.roleCbo.Name = "roleCbo";
-            this.roleCbo.Size = new System.Drawing.Size(100, 23);
+            this.roleCbo.Size = new System.Drawing.Size(76, 20);
             this.roleCbo.TabIndex = 4;
             this.roleCbo.SelectedIndex = 0;
             // 
             // loginBtn
             // 
-            this.loginBtn.Location = new System.Drawing.Point(293, 358);
+            this.loginBtn.Location = new System.Drawing.Point(222, 316);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(2);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(55, 23);
+            this.loginBtn.Size = new System.Drawing.Size(41, 18);
             this.loginBtn.TabIndex = 6;
             this.loginBtn.Text = "登陆";
             this.loginBtn.UseVisualStyleBackColor = true;
@@ -124,9 +132,10 @@ namespace ExamSystem
             // 
             // resetBtn
             // 
-            this.resetBtn.Location = new System.Drawing.Point(387, 358);
+            this.resetBtn.Location = new System.Drawing.Point(292, 316);
+            this.resetBtn.Margin = new System.Windows.Forms.Padding(2);
             this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(56, 23);
+            this.resetBtn.Size = new System.Drawing.Size(42, 18);
             this.resetBtn.TabIndex = 7;
             this.resetBtn.Text = "重置";
             this.resetBtn.UseVisualStyleBackColor = true;
@@ -134,10 +143,10 @@ namespace ExamSystem
             // 
             // LoginUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(782, 554);
+            this.ClientSize = new System.Drawing.Size(586, 443);
             this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.roleCbo);
@@ -148,6 +157,8 @@ namespace ExamSystem
             this.Controls.Add(this.userLab);
             this.Controls.Add(this.title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "LoginUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

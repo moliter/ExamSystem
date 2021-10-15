@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CCWin;
 
 namespace ExamSystem.UserManage
 {
-    public partial class SearchUserFrm : Form
+    public partial class SearchUserFrm : Skin_VS
     {
         public SearchUserFrm()
         {
@@ -55,9 +56,12 @@ namespace ExamSystem.UserManage
             {
                 ListViewItem listViewItem = new ListViewItem(sqlDataReader.Tables[0].Rows[i]["userNum"].ToString().Trim());
                 listViewItem.SubItems.Add(sqlDataReader.Tables[0].Rows[i]["userName"].ToString().Trim());
-                listViewItem.SubItems.Add(sqlDataReader.Tables[0].Rows[i]["userTel"].ToString().Trim());
+                listViewItem.SubItems.Add(sqlDataReader.Tables[0].Rows[i]["userPwd"].ToString().Trim());
+                listViewItem.SubItems.Add(sqlDataReader.Tables[0].Rows[i]["userGender"].ToString().Trim());
                 listViewItem.SubItems.Add(sqlDataReader.Tables[0].Rows[i]["userTel"].ToString().Trim());
                 listViewItem.SubItems.Add(sqlDataReader.Tables[0].Rows[i]["userClass"].ToString().Trim());
+                listViewItem.SubItems.Add(sqlDataReader.Tables[0].Rows[i]["userRole"].ToString().Trim());
+                
                 searchList.Items.Add(listViewItem);
                 flag = true;
             }
@@ -78,7 +82,26 @@ namespace ExamSystem.UserManage
                 MessageBox.Show("删除失败");
             }
         }
+
+        private void changeUserBtn_Click(object sender, EventArgs e)
+        {
+            AddUserFrm changeUserFrm = new AddUserFrm();
+            changeUserFrm.MdiParent = this.MdiParent;
+            changeUserFrm.Text = "修改用户";
+            changeUserFrm.userNumTxt.Text = this.searchList.SelectedItems[0].Text;
+            changeUserFrm.userNameTxt.Text = this.searchList.SelectedItems[0].SubItems[1].Text;
+            changeUserFrm.userPwdTxt.Text = this.searchList.SelectedItems[0].SubItems[2].Text;
+            changeUserFrm.userPwd2Txt.Text = this.searchList.SelectedItems[0].SubItems[2].Text;
+            changeUserFrm.userMan.Checked = this.searchList.SelectedItems[0].SubItems[3].Text == "男" ? true : false;
+            changeUserFrm.userFemale.Checked = this.searchList.SelectedItems[0].SubItems[3].Text == "女" ? true : false;
+            changeUserFrm.userTelTxt.Text = this.searchList.SelectedItems[0].SubItems[4].Text;
+            changeUserFrm.userClassCbo.Text = this.searchList.SelectedItems[0].SubItems[5].Text == "无" ? "无" : this.searchList.SelectedItems[0].SubItems[5].Text;
+            changeUserFrm.userRoleCbo.SelectedIndex = this.searchList.SelectedItems[0].SubItems[6].Text == "教师" ? 2 : (this.searchList.SelectedItems[0].SubItems[6].Text == "学生" ? 1 : 3);
+            changeUserFrm.Show();
+ 
+        }
+
+        }
     }
 
     
-}

@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ExamSystem;
+using CCWin;
 
 namespace ExamSystem
 {
-    public partial class LoginUI : Form
+    public partial class LoginUI : Skin_VS
     {
         public LoginUI()
         {
@@ -39,10 +40,11 @@ namespace ExamSystem
         //生成sql字符串
         public string LoginSqlString()
         {
-            string sqlTable = roleCbo.Text == "教师" ? "Teacher":(roleCbo.Text=="学生"?"Stu": "Adm");
+            string sqlRole = roleCbo.Text == "教师" ? "教师" : (roleCbo.Text=="学生"? "学生" : "管理员");
             string sqlAccount = userTxt.Text;
             string sqlPwd = pwdTxt.Text;
-            string sqlString = string.Format("SELECT COUNT(*) FROM dbo.{0} where Account = '{1}' and Pwd = '{2}';", sqlTable, sqlAccount, sqlPwd);
+            string sqlString = string.Format("SELECT Count(*)  FROM [dbo].[User]  where userNum = '{1}' and userPwd = '{2}' and userRole = '{0}';", sqlRole,sqlAccount, sqlPwd);
+            account.id = sqlAccount;
             return sqlString;
         }
 
@@ -89,7 +91,5 @@ namespace ExamSystem
             pwdTxt.ResetText();
             roleCbo.SelectedIndex = 0;
         }
-
-
     }
 }

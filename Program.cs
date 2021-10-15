@@ -28,7 +28,7 @@ namespace ExamSystem
                 Application.Run(new AdmFrm.AdmFrm());
             }else if(FrmStart.frmFlag == FrmFlag.startStu)
             {
-                Application.Run(new StuFrm.StuFrm());
+                Application.Run(new StuFrm.StuLogin());
             }
         }
     }
@@ -36,5 +36,10 @@ namespace ExamSystem
     public static class FrmStart
     {
         public static FrmFlag frmFlag = FrmFlag.noStart;
+    }
+
+    public static class account
+    {
+        public static string id;
     }
 }

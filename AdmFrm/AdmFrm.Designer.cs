@@ -42,9 +42,9 @@ namespace ExamSystem.AdmFrm
             this.AdmToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.AdmToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.userOperatBtn});
-            this.AdmToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.AdmToolStrip.Location = new System.Drawing.Point(8, 39);
             this.AdmToolStrip.Name = "AdmToolStrip";
-            this.AdmToolStrip.Size = new System.Drawing.Size(782, 27);
+            this.AdmToolStrip.Size = new System.Drawing.Size(765, 27);
             this.AdmToolStrip.TabIndex = 0;
             this.AdmToolStrip.Text = "toolStrip1";
             // 
@@ -58,19 +58,18 @@ namespace ExamSystem.AdmFrm
             this.userOperatBtn.Name = "userOperatBtn";
             this.userOperatBtn.Size = new System.Drawing.Size(108, 24);
             this.userOperatBtn.Text = "用户管理";
-            this.userOperatBtn.ButtonClick += new System.EventHandler(this.userOperatBtn_ButtonClick);
             // 
             // addUserBtn
             // 
             this.addUserBtn.Name = "addUserBtn";
-            this.addUserBtn.Size = new System.Drawing.Size(223, 26);
+            this.addUserBtn.Size = new System.Drawing.Size(224, 26);
             this.addUserBtn.Text = "添加用户";
             this.addUserBtn.Click += new System.EventHandler(this.addUserBtn_Click);
             // 
             // SelectUserBtn
             // 
             this.SelectUserBtn.Name = "SelectUserBtn";
-            this.SelectUserBtn.Size = new System.Drawing.Size(223, 26);
+            this.SelectUserBtn.Size = new System.Drawing.Size(224, 26);
             this.SelectUserBtn.Text = "查询用户";
             this.SelectUserBtn.Click += new System.EventHandler(this.selectUserBtn_Click);
             // 
@@ -78,12 +77,13 @@ namespace ExamSystem.AdmFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 554);
+            this.ClientSize = new System.Drawing.Size(781, 554);
             this.Controls.Add(this.AdmToolStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "AdmFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "管理员";
             this.AdmToolStrip.ResumeLayout(false);
             this.AdmToolStrip.PerformLayout();

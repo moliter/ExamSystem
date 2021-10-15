@@ -11,7 +11,8 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Desktop\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -21,10 +22,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -46,7 +47,23 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>708BCF74BC950EA9D589F187D553CD3FB7CC1891</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ExamSystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSkin, Version=16.1.14.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -74,11 +91,47 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ConnectSql.cs" />
-    <Compile Include="StuFrm\StuFrm.cs">
+    <Compile Include="StuFrm\StuExamFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StuFrm\StuFrm.Designer.cs">
-      <DependentUpon>StuFrm.cs</DependentUpon>
+    <Compile Include="StuFrm\StuExamFrm.Designer.cs">
+      <DependentUpon>StuExamFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StuFrm\StuLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StuFrm\StuLogin.Designer.cs">
+      <DependentUpon>StuLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeaFrm\AddQuestionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeaFrm\AddQuestionFrm.Designer.cs">
+      <DependentUpon>AddQuestionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeaFrm\correctFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeaFrm\correctFrm.Designer.cs">
+      <DependentUpon>correctFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeaFrm\CorrectQuestionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeaFrm\CorrectQuestionFrm.Designer.cs">
+      <DependentUpon>CorrectQuestionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeaFrm\PaperMkFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeaFrm\PaperMkFrm.Designer.cs">
+      <DependentUpon>PaperMkFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeaFrm\QuestionModifyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeaFrm\QuestionModifyFrm.Designer.cs">
+      <DependentUpon>QuestionModifyFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="TeaFrm\TeaFrm.cs">
       <SubType>Form</SubType>
@@ -91,12 +144,6 @@
     </Compile>
     <Compile Include="UserManage\AddUserFrm.Designer.cs">
       <DependentUpon>AddUserFrm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserManage\ChangeUserFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserManage\ChangeUserFrm.Designer.cs">
-      <DependentUpon>ChangeUserFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="UserManage\SearchUserFrm.cs">
       <SubType>Form</SubType>
@@ -119,8 +166,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="StuFrm\StuFrm.resx">
-      <DependentUpon>StuFrm.cs</DependentUpon>
+    <EmbeddedResource Include="StuFrm\StuExamFrm.resx">
+      <DependentUpon>StuExamFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StuFrm\StuLogin.resx">
+      <DependentUpon>StuLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeaFrm\AddQuestionFrm.resx">
+      <DependentUpon>AddQuestionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeaFrm\correctFrm.resx">
+      <DependentUpon>correctFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeaFrm\CorrectQuestionFrm.resx">
+      <DependentUpon>CorrectQuestionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeaFrm\PaperMkFrm.resx">
+      <DependentUpon>PaperMkFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeaFrm\QuestionModifyFrm.resx">
+      <DependentUpon>QuestionModifyFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeaFrm\TeaFrm.resx">
       <DependentUpon>TeaFrm.cs</DependentUpon>
@@ -128,12 +193,10 @@
     <EmbeddedResource Include="UserManage\AddUserFrm.resx">
       <DependentUpon>AddUserFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserManage\ChangeUserFrm.resx">
-      <DependentUpon>ChangeUserFrm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserManage\SearchUserFrm.resx">
       <DependentUpon>SearchUserFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ExamSystem_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
