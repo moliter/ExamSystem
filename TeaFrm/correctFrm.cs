@@ -19,6 +19,8 @@ namespace ExamSystem.TeaFrm
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
+            if (searchResultLv.Items.Count > 0)
+                searchResultLv.Items.Clear();
             GetQuestionAnswer();
         }
 
@@ -26,7 +28,7 @@ namespace ExamSystem.TeaFrm
         {
             if (check())
             {
-                string sqlNameString = string.Format("SELECT [paperId],[paperName] FROM [ExamSystemDB].[dbo].[Paper]WHERE paperName LIKE '%{0}%';", this.paperNameTxt.Text);
+                string sqlNameString = string.Format("SELECT [stuScore].[paperId],[paperName] FROM Paper right join stuScore on Paper.paperId = stuScore.paperId Where paperName LIKE '%{0}%' AND stuScore.paperScore<0;", this.paperNameTxt.Text);
                 DataSet idDataSet = ConnectSql.SelectData(sqlNameString);
                 List<int> tpaperId = new List<int>();
                 List < string > tpaperName = new List<string>();

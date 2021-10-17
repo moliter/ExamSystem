@@ -28,7 +28,7 @@ namespace ExamSystem.TeaFrm
             String questionTxtStem = this.searchTxt.Text;
             DataSet dataSetChoice;
             DataSet dataSetTxt;
-            if (InputSearchCheck())
+            if (true)
             {
                 AddTxtLv.Items.Clear();
                 AddChoiceLv.Items.Clear();
@@ -281,6 +281,34 @@ namespace ExamSystem.TeaFrm
                 flag = true;
             }
             return flag;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            randomChoice();
+            randomTxt();
+            AddBtn.PerformClick();
+
+        }
+
+        private void randomChoice()
+        {
+            RandomOption(PaperChoiceLv, Convert.ToInt32(choiceNup.Value));
+        }
+
+        private void randomTxt() 
+        {
+            RandomOption(PaperTxtLv, Convert.ToInt32(txtNup.Value));
+        }
+
+        private void RandomOption(ListView listView,int questionCount)
+        {
+            Random random = new Random(); 
+            for(int i = questionCount; i >= 0; i--)
+            {
+                int r = random.Next(0, listView.Items.Count);
+                listView.Items[r].Checked = true;
+            }
         }
     }
 }

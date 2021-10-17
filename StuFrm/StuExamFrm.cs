@@ -27,6 +27,7 @@ namespace ExamSystem.StuFrm
         static List<string> txtList;
         static int score = 0;
         static string PaperId = null;
+        static bool closeFrm = false;
         public StuExamFrm()
         {
             InitializeComponent();
@@ -146,7 +147,6 @@ namespace ExamSystem.StuFrm
             {
                 CompleteExam();
             }
-
             else
             {
                 CompleteExam();
@@ -164,6 +164,7 @@ namespace ExamSystem.StuFrm
                 {
                     MessageBox.Show("提交成功");
                     exitBtn.PerformClick();
+                    closeFrm = true;
                 }
             }
             else
@@ -257,6 +258,7 @@ namespace ExamSystem.StuFrm
                 this.timeLab.Text = time.ToString().Substring(0, 8);
                 if (time.TotalSeconds <= 0)
                 {
+                    this.timeLab.Text = "00:00:00";
                     SubmitAllQuestion();
                     break;
                 }
@@ -268,10 +270,16 @@ namespace ExamSystem.StuFrm
         #region 强制提交
         private void SubmitAllQuestion()
         {
-            MessageBox.Show("试卷截止将自动交卷", "提示", MessageBoxButtons.OK,MessageBoxIcon.Warning,MessageBoxDefaultButton.Button1,MessageBoxOptions.ServiceNotification);
+            //DialogResult dr1 = MessageBox.Show("试卷截止将自动交卷", "提示", MessageBoxButtons.OK,MessageBoxIcon.Warning,MessageBoxDefaultButton.Button1,MessageBoxOptions.ServiceNotification);
+            Thread.Sleep(2000);
+            while (true)
+            {
+                this.submitBtn.PerformClick();
+                this.NextQuestionBtn.PerformClick();
+                if (closeFrm)
+                    break; 
+            }
             
-            this.submitBtn.PerformClick();
-            this.NextQuestionBtn.PerformClick();
         } 
         #endregion
 

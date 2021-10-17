@@ -20,9 +20,18 @@ namespace ExamSystem.StuFrm
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
+            if (paperLv.Items.Count > 0)
+                paperLv.Clear();
             myExamPanel.Visible = true;
             scoreLv.Visible = false;
-            string sqlString = string.Format("SELECT [stuScore].[paperId],[paperName] FROM Paper right join stuScore on Paper.paperId = stuScore.paperId Where stuId ='{0}'; ",account.id);
+            string sqlString = string.Format(@"
+                IF Not Exists(SELECT  * FROM paperAnswer Where stuId='stu')
+	                Begin 
+		                SELECT [stuScore].[paperId],[paperName] FROM Paper right join stuScore on Paper.paperId = stuScore.paperId Where stuId ='{0}' AND stuScore.paperScore<0;
+	                END
+                ELSE
+	                SELECT paperId,paperName FROM Paper WHere Paper.paperId=null;"
+            , account.id);
             DataSet dataSet =  ConnectSql.SelectData(sqlString);
             for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
             {
