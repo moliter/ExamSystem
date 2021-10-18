@@ -59,19 +59,19 @@ namespace ExamSystem.TeaFrm
             // 
             // searchKeyTxt
             // 
-            this.searchKeyTxt.Location = new System.Drawing.Point(191, 52);
-            this.searchKeyTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.searchKeyTxt.Location = new System.Drawing.Point(255, 65);
+            this.searchKeyTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchKeyTxt.Name = "searchKeyTxt";
-            this.searchKeyTxt.Size = new System.Drawing.Size(254, 21);
+            this.searchKeyTxt.Size = new System.Drawing.Size(337, 25);
             this.searchKeyTxt.TabIndex = 1;
             // 
             // searchBtn
             // 
             this.searchBtn.ForeColor = System.Drawing.Color.Red;
-            this.searchBtn.Location = new System.Drawing.Point(460, 45);
-            this.searchBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.searchBtn.Location = new System.Drawing.Point(613, 56);
+            this.searchBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(56, 34);
+            this.searchBtn.Size = new System.Drawing.Size(75, 42);
             this.searchBtn.TabIndex = 2;
             this.searchBtn.Text = "搜索";
             this.searchBtn.UseVisualStyleBackColor = true;
@@ -91,11 +91,11 @@ namespace ExamSystem.TeaFrm
             this.questionChoiceLv.ContextMenuStrip = this.rightClickCms;
             this.questionChoiceLv.FullRowSelect = true;
             this.questionChoiceLv.HideSelection = false;
-            this.questionChoiceLv.Location = new System.Drawing.Point(51, 91);
-            this.questionChoiceLv.Margin = new System.Windows.Forms.Padding(2);
+            this.questionChoiceLv.Location = new System.Drawing.Point(25, 122);
+            this.questionChoiceLv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.questionChoiceLv.MultiSelect = false;
             this.questionChoiceLv.Name = "questionChoiceLv";
-            this.questionChoiceLv.Size = new System.Drawing.Size(529, 130);
+            this.questionChoiceLv.Size = new System.Drawing.Size(704, 162);
             this.questionChoiceLv.TabIndex = 3;
             this.questionChoiceLv.UseCompatibleStateImageBehavior = false;
             this.questionChoiceLv.View = System.Windows.Forms.View.Details;
@@ -144,26 +144,26 @@ namespace ExamSystem.TeaFrm
             this.modifyClickBtn,
             this.delClickBtn});
             this.rightClickCms.Name = "rightClickCms";
-            this.rightClickCms.Size = new System.Drawing.Size(125, 70);
+            this.rightClickCms.Size = new System.Drawing.Size(139, 76);
             // 
             // viewBtn
             // 
             this.viewBtn.Name = "viewBtn";
-            this.viewBtn.Size = new System.Drawing.Size(124, 22);
+            this.viewBtn.Size = new System.Drawing.Size(138, 24);
             this.viewBtn.Text = "查看详情";
             this.viewBtn.Click += new System.EventHandler(this.viewBtn_Click);
             // 
             // modifyClickBtn
             // 
             this.modifyClickBtn.Name = "modifyClickBtn";
-            this.modifyClickBtn.Size = new System.Drawing.Size(124, 22);
+            this.modifyClickBtn.Size = new System.Drawing.Size(138, 24);
             this.modifyClickBtn.Text = "修改";
             this.modifyClickBtn.Click += new System.EventHandler(this.modifyClickBtn_Click);
             // 
             // delClickBtn
             // 
             this.delClickBtn.Name = "delClickBtn";
-            this.delClickBtn.Size = new System.Drawing.Size(124, 22);
+            this.delClickBtn.Size = new System.Drawing.Size(138, 24);
             this.delClickBtn.Text = "删除";
             this.delClickBtn.Click += new System.EventHandler(this.delClickBtn_Click);
             // 
@@ -175,10 +175,10 @@ namespace ExamSystem.TeaFrm
             "题干：",
             "题库编号：",
             "答案："});
-            this.searchTypeCbo.Location = new System.Drawing.Point(127, 53);
-            this.searchTypeCbo.Margin = new System.Windows.Forms.Padding(2);
+            this.searchTypeCbo.Location = new System.Drawing.Point(169, 66);
+            this.searchTypeCbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchTypeCbo.Name = "searchTypeCbo";
-            this.searchTypeCbo.Size = new System.Drawing.Size(60, 20);
+            this.searchTypeCbo.Size = new System.Drawing.Size(79, 23);
             this.searchTypeCbo.TabIndex = 5;
             this.searchTypeCbo.SelectedIndex = 0;
             // 
@@ -192,11 +192,11 @@ namespace ExamSystem.TeaFrm
             this.questionTxtLv.ContextMenuStrip = this.rightClickCms;
             this.questionTxtLv.FullRowSelect = true;
             this.questionTxtLv.HideSelection = false;
-            this.questionTxtLv.Location = new System.Drawing.Point(51, 260);
-            this.questionTxtLv.Margin = new System.Windows.Forms.Padding(2);
+            this.questionTxtLv.Location = new System.Drawing.Point(25, 325);
+            this.questionTxtLv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.questionTxtLv.MultiSelect = false;
             this.questionTxtLv.Name = "questionTxtLv";
-            this.questionTxtLv.Size = new System.Drawing.Size(529, 123);
+            this.questionTxtLv.Size = new System.Drawing.Size(704, 153);
             this.questionTxtLv.TabIndex = 3;
             this.questionTxtLv.UseCompatibleStateImageBehavior = false;
             this.questionTxtLv.View = System.Windows.Forms.View.Details;
@@ -225,10 +225,9 @@ namespace ExamSystem.TeaFrm
             // 
             this.questionChoiceLab.AutoSize = true;
             this.questionChoiceLab.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.questionChoiceLab.Location = new System.Drawing.Point(51, 76);
-            this.questionChoiceLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.questionChoiceLab.Location = new System.Drawing.Point(68, 95);
             this.questionChoiceLab.Name = "questionChoiceLab";
-            this.questionChoiceLab.Size = new System.Drawing.Size(53, 12);
+            this.questionChoiceLab.Size = new System.Drawing.Size(67, 15);
             this.questionChoiceLab.TabIndex = 6;
             this.questionChoiceLab.Text = "客观题：";
             // 
@@ -236,18 +235,19 @@ namespace ExamSystem.TeaFrm
             // 
             this.questionTxtLab.AutoSize = true;
             this.questionTxtLab.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.questionTxtLab.Location = new System.Drawing.Point(51, 246);
-            this.questionTxtLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.questionTxtLab.Location = new System.Drawing.Point(68, 308);
             this.questionTxtLab.Name = "questionTxtLab";
-            this.questionTxtLab.Size = new System.Drawing.Size(53, 12);
+            this.questionTxtLab.Size = new System.Drawing.Size(67, 15);
             this.questionTxtLab.TabIndex = 6;
             this.questionTxtLab.Text = "主观题：";
             // 
             // QuestionModifyFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 413);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(757, 516);
             this.Controls.Add(this.questionTxtLab);
             this.Controls.Add(this.questionChoiceLab);
             this.Controls.Add(this.searchTypeCbo);
@@ -258,7 +258,7 @@ namespace ExamSystem.TeaFrm
             this.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "QuestionModifyFrm";
             this.Text = "题目修改";

@@ -46,7 +46,6 @@ namespace ExamSystem.StuFrm
             this.examScore = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.toolStrip1.SuspendLayout();
             this.rightclick.SuspendLayout();
-            this.myExamPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -58,37 +57,34 @@ namespace ExamSystem.StuFrm
             this.toolStripButton3});
             this.toolStrip1.Location = new System.Drawing.Point(8, 39);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(784, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(784, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripButton1
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(73, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(93, 28);
             this.toolStripButton1.Text = "我的考试";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(73, 24);
+            this.toolStripButton2.Size = new System.Drawing.Size(93, 28);
             this.toolStripButton2.Text = "我的信息";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton3
             // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(73, 24);
+            this.toolStripButton3.Size = new System.Drawing.Size(93, 28);
             this.toolStripButton3.Text = "我的成绩";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
@@ -100,11 +96,11 @@ namespace ExamSystem.StuFrm
             this.paperLv.ContextMenuStrip = this.rightclick;
             this.paperLv.FullRowSelect = true;
             this.paperLv.HideSelection = false;
-            this.paperLv.Location = new System.Drawing.Point(0, 2);
+            this.paperLv.Location = new System.Drawing.Point(8, 85);
             this.paperLv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paperLv.MultiSelect = false;
             this.paperLv.Name = "paperLv";
-            this.paperLv.Size = new System.Drawing.Size(359, 366);
+            this.paperLv.Size = new System.Drawing.Size(361, 363);
             this.paperLv.TabIndex = 0;
             this.paperLv.UseCompatibleStateImageBehavior = false;
             this.paperLv.View = System.Windows.Forms.View.Details;
@@ -136,7 +132,6 @@ namespace ExamSystem.StuFrm
             // 
             // myExamPanel
             // 
-            this.myExamPanel.Controls.Add(this.paperLv);
             this.myExamPanel.Location = new System.Drawing.Point(11, 99);
             this.myExamPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.myExamPanel.Name = "myExamPanel";
@@ -150,7 +145,7 @@ namespace ExamSystem.StuFrm
             this.examName,
             this.examScore});
             this.scoreLv.HideSelection = false;
-            this.scoreLv.Location = new System.Drawing.Point(397, 101);
+            this.scoreLv.Location = new System.Drawing.Point(375, 83);
             this.scoreLv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.scoreLv.Name = "scoreLv";
             this.scoreLv.Size = new System.Drawing.Size(369, 348);
@@ -173,7 +168,10 @@ namespace ExamSystem.StuFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 492);
+            this.Controls.Add(this.paperLv);
             this.Controls.Add(this.scoreLv);
             this.Controls.Add(this.myExamPanel);
             this.Controls.Add(this.toolStrip1);
@@ -185,7 +183,6 @@ namespace ExamSystem.StuFrm
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.rightclick.ResumeLayout(false);
-            this.myExamPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

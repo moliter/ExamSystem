@@ -21,11 +21,11 @@ namespace ExamSystem.StuFrm
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             if (paperLv.Items.Count > 0)
-                paperLv.Clear();
+                paperLv.Items.Clear();
             myExamPanel.Visible = true;
             scoreLv.Visible = false;
             string sqlString = string.Format(@"
-                IF Not Exists(SELECT  * FROM paperAnswer Where stuId='stu')
+                IF Exists(SELECT  * FROM stuScore Where stuId='{0}' AND paperScore=-1)
 	                Begin 
 		                SELECT [stuScore].[paperId],[paperName] FROM Paper right join stuScore on Paper.paperId = stuScore.paperId Where stuId ='{0}' AND stuScore.paperScore<0;
 	                END
@@ -76,6 +76,8 @@ namespace ExamSystem.StuFrm
         {
             scoreLv.Visible = true;
             myExamPanel.Visible = false;
+            if (scoreLv.Items.Count > 0)
+                scoreLv.Items.Clear();
             string sqlString = string.Format("SELECT [paperName],[paperScore] FROM Paper right join stuScore on Paper.paperId = stuScore.paperId Where stuId ='{0}'; ",account.id);
             DataSet dataSet = ConnectSql.SelectData(sqlString);
             for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)

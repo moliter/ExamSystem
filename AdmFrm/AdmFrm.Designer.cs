@@ -39,12 +39,12 @@ namespace ExamSystem.AdmFrm
             // 
             // AdmToolStrip
             // 
-            this.AdmToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.AdmToolStrip.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.AdmToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.userOperatBtn});
             this.AdmToolStrip.Location = new System.Drawing.Point(8, 39);
             this.AdmToolStrip.Name = "AdmToolStrip";
-            this.AdmToolStrip.Size = new System.Drawing.Size(765, 27);
+            this.AdmToolStrip.Size = new System.Drawing.Size(587, 47);
             this.AdmToolStrip.TabIndex = 0;
             this.AdmToolStrip.Text = "toolStrip1";
             // 
@@ -56,7 +56,7 @@ namespace ExamSystem.AdmFrm
             this.userOperatBtn.Image = ((System.Drawing.Image)(resources.GetObject("userOperatBtn.Image")));
             this.userOperatBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.userOperatBtn.Name = "userOperatBtn";
-            this.userOperatBtn.Size = new System.Drawing.Size(108, 24);
+            this.userOperatBtn.Size = new System.Drawing.Size(128, 44);
             this.userOperatBtn.Text = "用户管理";
             // 
             // addUserBtn
@@ -77,7 +77,8 @@ namespace ExamSystem.AdmFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 554);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(603, 406);
             this.Controls.Add(this.AdmToolStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -93,7 +93,7 @@ namespace ExamSystem.TeaFrm
             this.questionChoiceAnswer});
             this.AddChoiceLv.FullRowSelect = true;
             this.AddChoiceLv.HideSelection = false;
-            this.AddChoiceLv.Location = new System.Drawing.Point(63, 98);
+            this.AddChoiceLv.Location = new System.Drawing.Point(35, 98);
             this.AddChoiceLv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddChoiceLv.Name = "AddChoiceLv";
             this.AddChoiceLv.Size = new System.Drawing.Size(537, 222);
@@ -142,7 +142,7 @@ namespace ExamSystem.TeaFrm
             // 
             // AddBtn
             // 
-            this.AddBtn.Location = new System.Drawing.Point(620, 298);
+            this.AddBtn.Location = new System.Drawing.Point(592, 298);
             this.AddBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(75, 36);
@@ -153,7 +153,7 @@ namespace ExamSystem.TeaFrm
             // 
             // DelBtn
             // 
-            this.DelBtn.Location = new System.Drawing.Point(620, 362);
+            this.DelBtn.Location = new System.Drawing.Point(592, 362);
             this.DelBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DelBtn.Name = "DelBtn";
             this.DelBtn.Size = new System.Drawing.Size(75, 29);
@@ -164,7 +164,7 @@ namespace ExamSystem.TeaFrm
             // 
             // AllSelectBtn
             // 
-            this.AllSelectBtn.Location = new System.Drawing.Point(63, 336);
+            this.AllSelectBtn.Location = new System.Drawing.Point(35, 336);
             this.AllSelectBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AllSelectBtn.Name = "AllSelectBtn";
             this.AllSelectBtn.Size = new System.Drawing.Size(77, 36);
@@ -175,7 +175,7 @@ namespace ExamSystem.TeaFrm
             // 
             // searchTxt
             // 
-            this.searchTxt.Location = new System.Drawing.Point(65, 55);
+            this.searchTxt.Location = new System.Drawing.Point(32, 55);
             this.searchTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchTxt.Name = "searchTxt";
             this.searchTxt.Size = new System.Drawing.Size(265, 25);
@@ -183,7 +183,7 @@ namespace ExamSystem.TeaFrm
             // 
             // searchBtn
             // 
-            this.searchBtn.Location = new System.Drawing.Point(337, 51);
+            this.searchBtn.Location = new System.Drawing.Point(309, 51);
             this.searchBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(75, 35);
@@ -202,7 +202,7 @@ namespace ExamSystem.TeaFrm
             this.questionTxtAnswer});
             this.AddTxtLv.FullRowSelect = true;
             this.AddTxtLv.HideSelection = false;
-            this.AddTxtLv.Location = new System.Drawing.Point(63, 378);
+            this.AddTxtLv.Location = new System.Drawing.Point(35, 378);
             this.AddTxtLv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddTxtLv.Name = "AddTxtLv";
             this.AddTxtLv.Size = new System.Drawing.Size(537, 212);
@@ -244,7 +244,7 @@ namespace ExamSystem.TeaFrm
             this.PaperQuestionAnswer});
             this.PaperChoiceLv.FullRowSelect = true;
             this.PaperChoiceLv.HideSelection = false;
-            this.PaperChoiceLv.Location = new System.Drawing.Point(715, 98);
+            this.PaperChoiceLv.Location = new System.Drawing.Point(687, 98);
             this.PaperChoiceLv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaperChoiceLv.Name = "PaperChoiceLv";
             this.PaperChoiceLv.Size = new System.Drawing.Size(524, 222);
@@ -293,7 +293,7 @@ namespace ExamSystem.TeaFrm
             // 
             // AllSelectTxtBtn
             // 
-            this.AllSelectTxtBtn.Location = new System.Drawing.Point(63, 605);
+            this.AllSelectTxtBtn.Location = new System.Drawing.Point(35, 605);
             this.AllSelectTxtBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AllSelectTxtBtn.Name = "AllSelectTxtBtn";
             this.AllSelectTxtBtn.Size = new System.Drawing.Size(77, 41);
@@ -313,7 +313,7 @@ namespace ExamSystem.TeaFrm
             this.questionTxtId});
             this.PaperTxtLv.FullRowSelect = true;
             this.PaperTxtLv.HideSelection = false;
-            this.PaperTxtLv.Location = new System.Drawing.Point(715, 378);
+            this.PaperTxtLv.Location = new System.Drawing.Point(687, 378);
             this.PaperTxtLv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaperTxtLv.Name = "PaperTxtLv";
             this.PaperTxtLv.Size = new System.Drawing.Size(524, 212);
@@ -348,18 +348,19 @@ namespace ExamSystem.TeaFrm
             // 
             // PaperSubmit
             // 
-            this.PaperSubmit.Location = new System.Drawing.Point(788, 659);
+            this.PaperSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.PaperSubmit.Location = new System.Drawing.Point(770, 659);
             this.PaperSubmit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaperSubmit.Name = "PaperSubmit";
             this.PaperSubmit.Size = new System.Drawing.Size(96, 29);
             this.PaperSubmit.TabIndex = 11;
             this.PaperSubmit.Text = "试卷生成";
-            this.PaperSubmit.UseVisualStyleBackColor = true;
+            this.PaperSubmit.UseVisualStyleBackColor = false;
             this.PaperSubmit.Click += new System.EventHandler(this.PaperSubmit_Click);
             // 
             // PaperNameTxt
             // 
-            this.PaperNameTxt.Location = new System.Drawing.Point(531, 624);
+            this.PaperNameTxt.Location = new System.Drawing.Point(513, 624);
             this.PaperNameTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaperNameTxt.Name = "PaperNameTxt";
             this.PaperNameTxt.Size = new System.Drawing.Size(237, 25);
@@ -368,8 +369,9 @@ namespace ExamSystem.TeaFrm
             // PaperNameLab
             // 
             this.PaperNameLab.AutoSize = true;
+            this.PaperNameLab.BackColor = System.Drawing.Color.Transparent;
             this.PaperNameLab.ForeColor = System.Drawing.Color.White;
-            this.PaperNameLab.Location = new System.Drawing.Point(457, 631);
+            this.PaperNameLab.Location = new System.Drawing.Point(439, 631);
             this.PaperNameLab.Name = "PaperNameLab";
             this.PaperNameLab.Size = new System.Drawing.Size(67, 15);
             this.PaperNameLab.TabIndex = 13;
@@ -378,8 +380,9 @@ namespace ExamSystem.TeaFrm
             // paperClassLab
             // 
             this.paperClassLab.AutoSize = true;
+            this.paperClassLab.BackColor = System.Drawing.Color.Transparent;
             this.paperClassLab.ForeColor = System.Drawing.Color.White;
-            this.paperClassLab.Location = new System.Drawing.Point(443, 670);
+            this.paperClassLab.Location = new System.Drawing.Point(424, 669);
             this.paperClassLab.Name = "paperClassLab";
             this.paperClassLab.Size = new System.Drawing.Size(82, 15);
             this.paperClassLab.TabIndex = 14;
@@ -393,32 +396,34 @@ namespace ExamSystem.TeaFrm
             "请选择：",
             "2020级计算机",
             "2019级计算机"});
-            this.paperClassCbo.Location = new System.Drawing.Point(531, 661);
+            this.paperClassCbo.Location = new System.Drawing.Point(513, 661);
             this.paperClassCbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paperClassCbo.Name = "paperClassCbo";
             this.paperClassCbo.Size = new System.Drawing.Size(236, 23);
             this.paperClassCbo.TabIndex = 15;
+            this.paperClassCbo.SelectedIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1075, 49);
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Location = new System.Drawing.Point(1047, 49);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 39);
             this.button1.TabIndex = 16;
-            this.button1.Text = "随机生成试卷";
+            this.button1.Text = "随机选择题目";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // choiceNup
             // 
-            this.choiceNup.Location = new System.Drawing.Point(840, 55);
+            this.choiceNup.Location = new System.Drawing.Point(812, 55);
             this.choiceNup.Name = "choiceNup";
             this.choiceNup.Size = new System.Drawing.Size(44, 25);
             this.choiceNup.TabIndex = 17;
             // 
             // txtNup
             // 
-            this.txtNup.Location = new System.Drawing.Point(1011, 56);
+            this.txtNup.Location = new System.Drawing.Point(983, 56);
             this.txtNup.Name = "txtNup";
             this.txtNup.Size = new System.Drawing.Size(44, 25);
             this.txtNup.TabIndex = 17;
@@ -427,7 +432,7 @@ namespace ExamSystem.TeaFrm
             // 
             this.choiceNum.AutoSize = true;
             this.choiceNum.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.choiceNum.Location = new System.Drawing.Point(737, 57);
+            this.choiceNum.Location = new System.Drawing.Point(709, 57);
             this.choiceNum.Name = "choiceNum";
             this.choiceNum.Size = new System.Drawing.Size(97, 15);
             this.choiceNum.TabIndex = 18;
@@ -437,7 +442,7 @@ namespace ExamSystem.TeaFrm
             // 
             this.txtNum.AutoSize = true;
             this.txtNum.ForeColor = System.Drawing.Color.White;
-            this.txtNum.Location = new System.Drawing.Point(899, 58);
+            this.txtNum.Location = new System.Drawing.Point(871, 58);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(97, 15);
             this.txtNum.TabIndex = 19;
@@ -447,7 +452,9 @@ namespace ExamSystem.TeaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1304, 754);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1246, 694);
             this.Controls.Add(this.txtNum);
             this.Controls.Add(this.choiceNum);
             this.Controls.Add(this.txtNup);

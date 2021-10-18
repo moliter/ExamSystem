@@ -29,6 +29,7 @@ namespace ExamSystem.UserManage
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUserFrm));
             this.userNumLab = new System.Windows.Forms.Label();
             this.userNameLab = new System.Windows.Forms.Label();
             this.userPwdLab = new System.Windows.Forms.Label();
@@ -56,10 +57,9 @@ namespace ExamSystem.UserManage
             // 
             this.userNumLab.AutoSize = true;
             this.userNumLab.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.userNumLab.Location = new System.Drawing.Point(44, 50);
-            this.userNumLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.userNumLab.Location = new System.Drawing.Point(59, 62);
             this.userNumLab.Name = "userNumLab";
-            this.userNumLab.Size = new System.Drawing.Size(29, 12);
+            this.userNumLab.Size = new System.Drawing.Size(37, 15);
             this.userNumLab.TabIndex = 0;
             this.userNumLab.Text = "账号";
             // 
@@ -67,10 +67,9 @@ namespace ExamSystem.UserManage
             // 
             this.userNameLab.AutoSize = true;
             this.userNameLab.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.userNameLab.Location = new System.Drawing.Point(44, 81);
-            this.userNameLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.userNameLab.Location = new System.Drawing.Point(59, 101);
             this.userNameLab.Name = "userNameLab";
-            this.userNameLab.Size = new System.Drawing.Size(29, 12);
+            this.userNameLab.Size = new System.Drawing.Size(37, 15);
             this.userNameLab.TabIndex = 0;
             this.userNameLab.Text = "名字";
             // 
@@ -78,10 +77,9 @@ namespace ExamSystem.UserManage
             // 
             this.userPwdLab.AutoSize = true;
             this.userPwdLab.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.userPwdLab.Location = new System.Drawing.Point(193, 53);
-            this.userPwdLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.userPwdLab.Location = new System.Drawing.Point(257, 66);
             this.userPwdLab.Name = "userPwdLab";
-            this.userPwdLab.Size = new System.Drawing.Size(29, 12);
+            this.userPwdLab.Size = new System.Drawing.Size(37, 15);
             this.userPwdLab.TabIndex = 0;
             this.userPwdLab.Text = "密码";
             // 
@@ -89,10 +87,9 @@ namespace ExamSystem.UserManage
             // 
             this.userPwd2Lab.AutoSize = true;
             this.userPwd2Lab.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.userPwd2Lab.Location = new System.Drawing.Point(170, 81);
-            this.userPwd2Lab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.userPwd2Lab.Location = new System.Drawing.Point(227, 101);
             this.userPwd2Lab.Name = "userPwd2Lab";
-            this.userPwd2Lab.Size = new System.Drawing.Size(53, 12);
+            this.userPwd2Lab.Size = new System.Drawing.Size(67, 15);
             this.userPwd2Lab.TabIndex = 0;
             this.userPwd2Lab.Text = "确认密码";
             // 
@@ -100,10 +97,9 @@ namespace ExamSystem.UserManage
             // 
             this.userRoleLab.AutoSize = true;
             this.userRoleLab.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.userRoleLab.Location = new System.Drawing.Point(44, 107);
-            this.userRoleLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.userRoleLab.Location = new System.Drawing.Point(59, 134);
             this.userRoleLab.Name = "userRoleLab";
-            this.userRoleLab.Size = new System.Drawing.Size(29, 12);
+            this.userRoleLab.Size = new System.Drawing.Size(37, 15);
             this.userRoleLab.TabIndex = 0;
             this.userRoleLab.Text = "身份";
             // 
@@ -111,44 +107,43 @@ namespace ExamSystem.UserManage
             // 
             this.userClassLab.AutoSize = true;
             this.userClassLab.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.userClassLab.Location = new System.Drawing.Point(44, 138);
-            this.userClassLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.userClassLab.Location = new System.Drawing.Point(59, 172);
             this.userClassLab.Name = "userClassLab";
-            this.userClassLab.Size = new System.Drawing.Size(29, 12);
+            this.userClassLab.Size = new System.Drawing.Size(37, 15);
             this.userClassLab.TabIndex = 0;
             this.userClassLab.Text = "班级";
             // 
             // userNumTxt
             // 
-            this.userNumTxt.Location = new System.Drawing.Point(76, 48);
-            this.userNumTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userNumTxt.Location = new System.Drawing.Point(101, 60);
+            this.userNumTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userNumTxt.Name = "userNumTxt";
-            this.userNumTxt.Size = new System.Drawing.Size(76, 21);
+            this.userNumTxt.Size = new System.Drawing.Size(100, 25);
             this.userNumTxt.TabIndex = 1;
             // 
             // userNameTxt
             // 
-            this.userNameTxt.Location = new System.Drawing.Point(76, 76);
-            this.userNameTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userNameTxt.Location = new System.Drawing.Point(101, 95);
+            this.userNameTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userNameTxt.Name = "userNameTxt";
-            this.userNameTxt.Size = new System.Drawing.Size(76, 21);
+            this.userNameTxt.Size = new System.Drawing.Size(100, 25);
             this.userNameTxt.TabIndex = 1;
             // 
             // userPwdTxt
             // 
-            this.userPwdTxt.Location = new System.Drawing.Point(224, 48);
-            this.userPwdTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userPwdTxt.Location = new System.Drawing.Point(299, 60);
+            this.userPwdTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userPwdTxt.Name = "userPwdTxt";
-            this.userPwdTxt.Size = new System.Drawing.Size(76, 21);
+            this.userPwdTxt.Size = new System.Drawing.Size(100, 25);
             this.userPwdTxt.TabIndex = 1;
             this.userPwdTxt.UseSystemPasswordChar = true;
             // 
             // userPwd2Txt
             // 
-            this.userPwd2Txt.Location = new System.Drawing.Point(224, 78);
-            this.userPwd2Txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userPwd2Txt.Location = new System.Drawing.Point(299, 98);
+            this.userPwd2Txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userPwd2Txt.Name = "userPwd2Txt";
-            this.userPwd2Txt.Size = new System.Drawing.Size(76, 21);
+            this.userPwd2Txt.Size = new System.Drawing.Size(100, 25);
             this.userPwd2Txt.TabIndex = 1;
             this.userPwd2Txt.UseSystemPasswordChar = true;
             // 
@@ -160,10 +155,10 @@ namespace ExamSystem.UserManage
             "2020级计算机",
             "2019级计算机",
             "2018级计算机"});
-            this.userClassCbo.Location = new System.Drawing.Point(76, 132);
-            this.userClassCbo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userClassCbo.Location = new System.Drawing.Point(101, 165);
+            this.userClassCbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userClassCbo.Name = "userClassCbo";
-            this.userClassCbo.Size = new System.Drawing.Size(75, 20);
+            this.userClassCbo.Size = new System.Drawing.Size(99, 23);
             this.userClassCbo.TabIndex = 2;
             this.userClassCbo.SelectedIndex = 0;
             // 
@@ -175,10 +170,10 @@ namespace ExamSystem.UserManage
             "学生",
             "教师",
             "管理员"});
-            this.userRoleCbo.Location = new System.Drawing.Point(76, 104);
-            this.userRoleCbo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userRoleCbo.Location = new System.Drawing.Point(101, 130);
+            this.userRoleCbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userRoleCbo.Name = "userRoleCbo";
-            this.userRoleCbo.Size = new System.Drawing.Size(76, 20);
+            this.userRoleCbo.Size = new System.Drawing.Size(100, 23);
             this.userRoleCbo.TabIndex = 3;
             this.userRoleCbo.SelectedIndex = 0;
             // 
@@ -186,10 +181,9 @@ namespace ExamSystem.UserManage
             // 
             this.userGenderLab.AutoSize = true;
             this.userGenderLab.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.userGenderLab.Location = new System.Drawing.Point(193, 112);
-            this.userGenderLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.userGenderLab.Location = new System.Drawing.Point(257, 140);
             this.userGenderLab.Name = "userGenderLab";
-            this.userGenderLab.Size = new System.Drawing.Size(29, 12);
+            this.userGenderLab.Size = new System.Drawing.Size(37, 15);
             this.userGenderLab.TabIndex = 4;
             this.userGenderLab.Text = "性别";
             // 
@@ -197,38 +191,37 @@ namespace ExamSystem.UserManage
             // 
             this.userTelLab.AutoSize = true;
             this.userTelLab.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.userTelLab.Location = new System.Drawing.Point(170, 140);
-            this.userTelLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.userTelLab.Location = new System.Drawing.Point(227, 175);
             this.userTelLab.Name = "userTelLab";
-            this.userTelLab.Size = new System.Drawing.Size(53, 12);
+            this.userTelLab.Size = new System.Drawing.Size(67, 15);
             this.userTelLab.TabIndex = 5;
             this.userTelLab.Text = "联系方式";
             // 
             // userTelTxt
             // 
-            this.userTelTxt.Location = new System.Drawing.Point(224, 132);
-            this.userTelTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userTelTxt.Location = new System.Drawing.Point(299, 165);
+            this.userTelTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userTelTxt.Name = "userTelTxt";
-            this.userTelTxt.Size = new System.Drawing.Size(112, 21);
+            this.userTelTxt.Size = new System.Drawing.Size(148, 25);
             this.userTelTxt.TabIndex = 1;
             // 
             // userGenderPanel
             // 
             this.userGenderPanel.Controls.Add(this.userFemale);
             this.userGenderPanel.Controls.Add(this.userMan);
-            this.userGenderPanel.Location = new System.Drawing.Point(226, 106);
-            this.userGenderPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userGenderPanel.Location = new System.Drawing.Point(301, 132);
+            this.userGenderPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userGenderPanel.Name = "userGenderPanel";
-            this.userGenderPanel.Size = new System.Drawing.Size(83, 22);
+            this.userGenderPanel.Size = new System.Drawing.Size(111, 28);
             this.userGenderPanel.TabIndex = 6;
             // 
             // userFemale
             // 
             this.userFemale.AutoSize = true;
-            this.userFemale.Location = new System.Drawing.Point(46, 2);
-            this.userFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userFemale.Location = new System.Drawing.Point(61, 2);
+            this.userFemale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userFemale.Name = "userFemale";
-            this.userFemale.Size = new System.Drawing.Size(35, 16);
+            this.userFemale.Size = new System.Drawing.Size(43, 19);
             this.userFemale.TabIndex = 1;
             this.userFemale.TabStop = true;
             this.userFemale.Text = "女";
@@ -237,10 +230,10 @@ namespace ExamSystem.UserManage
             // userMan
             // 
             this.userMan.AutoSize = true;
-            this.userMan.Location = new System.Drawing.Point(3, 3);
-            this.userMan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userMan.Location = new System.Drawing.Point(4, 4);
+            this.userMan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userMan.Name = "userMan";
-            this.userMan.Size = new System.Drawing.Size(35, 16);
+            this.userMan.Size = new System.Drawing.Size(43, 19);
             this.userMan.TabIndex = 0;
             this.userMan.TabStop = true;
             this.userMan.Text = "男";
@@ -249,10 +242,10 @@ namespace ExamSystem.UserManage
             // addBtn
             // 
             this.addBtn.ForeColor = System.Drawing.Color.Blue;
-            this.addBtn.Location = new System.Drawing.Point(88, 197);
-            this.addBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addBtn.Location = new System.Drawing.Point(117, 246);
+            this.addBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(63, 29);
+            this.addBtn.Size = new System.Drawing.Size(84, 36);
             this.addBtn.TabIndex = 7;
             this.addBtn.Text = "提交";
             this.addBtn.UseVisualStyleBackColor = true;
@@ -261,10 +254,10 @@ namespace ExamSystem.UserManage
             // resetBtn
             // 
             this.resetBtn.ForeColor = System.Drawing.Color.Blue;
-            this.resetBtn.Location = new System.Drawing.Point(224, 197);
-            this.resetBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.resetBtn.Location = new System.Drawing.Point(299, 246);
+            this.resetBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(63, 29);
+            this.resetBtn.Size = new System.Drawing.Size(84, 36);
             this.resetBtn.TabIndex = 7;
             this.resetBtn.Text = "重置";
             this.resetBtn.UseVisualStyleBackColor = true;
@@ -272,9 +265,10 @@ namespace ExamSystem.UserManage
             // 
             // AddUserFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 283);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(516, 354);
             this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.userGenderPanel);
@@ -295,7 +289,7 @@ namespace ExamSystem.UserManage
             this.Controls.Add(this.userNumLab);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddUserFrm";
             this.Text = "添加用户";
             this.userGenderPanel.ResumeLayout(false);

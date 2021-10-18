@@ -30,6 +30,7 @@ namespace ExamSystem.UserManage
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchUserFrm));
             this.typeSeacrhCbo = new System.Windows.Forms.ComboBox();
             this.searchInputTxt = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
@@ -55,27 +56,27 @@ namespace ExamSystem.UserManage
             "名字：",
             "账号：",
             "电话号码："});
-            this.typeSeacrhCbo.Location = new System.Drawing.Point(43, 51);
-            this.typeSeacrhCbo.Margin = new System.Windows.Forms.Padding(2);
+            this.typeSeacrhCbo.Location = new System.Drawing.Point(57, 64);
+            this.typeSeacrhCbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.typeSeacrhCbo.Name = "typeSeacrhCbo";
-            this.typeSeacrhCbo.Size = new System.Drawing.Size(72, 20);
+            this.typeSeacrhCbo.Size = new System.Drawing.Size(95, 23);
             this.typeSeacrhCbo.TabIndex = 0;
             this.typeSeacrhCbo.SelectedIndex = 0;
             // 
             // searchInputTxt
             // 
-            this.searchInputTxt.Location = new System.Drawing.Point(119, 50);
-            this.searchInputTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.searchInputTxt.Location = new System.Drawing.Point(159, 62);
+            this.searchInputTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchInputTxt.Name = "searchInputTxt";
-            this.searchInputTxt.Size = new System.Drawing.Size(144, 21);
+            this.searchInputTxt.Size = new System.Drawing.Size(191, 25);
             this.searchInputTxt.TabIndex = 1;
             // 
             // searchBtn
             // 
-            this.searchBtn.Location = new System.Drawing.Point(267, 49);
-            this.searchBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.searchBtn.Location = new System.Drawing.Point(356, 61);
+            this.searchBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(57, 18);
+            this.searchBtn.Size = new System.Drawing.Size(76, 22);
             this.searchBtn.TabIndex = 2;
             this.searchBtn.Text = "搜索";
             this.searchBtn.UseVisualStyleBackColor = true;
@@ -94,11 +95,11 @@ namespace ExamSystem.UserManage
             this.searchList.ContextMenuStrip = this.rightContextClick;
             this.searchList.FullRowSelect = true;
             this.searchList.HideSelection = false;
-            this.searchList.Location = new System.Drawing.Point(30, 75);
-            this.searchList.Margin = new System.Windows.Forms.Padding(2);
+            this.searchList.Location = new System.Drawing.Point(11, 109);
+            this.searchList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchList.MultiSelect = false;
             this.searchList.Name = "searchList";
-            this.searchList.Size = new System.Drawing.Size(518, 206);
+            this.searchList.Size = new System.Drawing.Size(689, 256);
             this.searchList.TabIndex = 3;
             this.searchList.UseCompatibleStateImageBehavior = false;
             this.searchList.View = System.Windows.Forms.View.Details;
@@ -144,33 +145,35 @@ namespace ExamSystem.UserManage
             this.changeUserBtn,
             this.deleteUserBtn});
             this.rightContextClick.Name = "rightContextClick";
-            this.rightContextClick.Size = new System.Drawing.Size(101, 48);
+            this.rightContextClick.Size = new System.Drawing.Size(109, 52);
             // 
             // changeUserBtn
             // 
             this.changeUserBtn.Name = "changeUserBtn";
-            this.changeUserBtn.Size = new System.Drawing.Size(100, 22);
+            this.changeUserBtn.Size = new System.Drawing.Size(108, 24);
             this.changeUserBtn.Text = "修改";
             this.changeUserBtn.Click += new System.EventHandler(this.changeUserBtn_Click);
             // 
             // deleteUserBtn
             // 
             this.deleteUserBtn.Name = "deleteUserBtn";
-            this.deleteUserBtn.Size = new System.Drawing.Size(100, 22);
+            this.deleteUserBtn.Size = new System.Drawing.Size(108, 24);
             this.deleteUserBtn.Text = "删除";
             this.deleteUserBtn.Click += new System.EventHandler(this.deleteUserBtn_Click);
             // 
             // SearchUserFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 311);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(704, 426);
             this.Controls.Add(this.searchList);
             this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.searchInputTxt);
             this.Controls.Add(this.typeSeacrhCbo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "SearchUserFrm";
             this.Text = "查找用户";

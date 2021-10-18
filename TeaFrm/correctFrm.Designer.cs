@@ -47,7 +47,7 @@ namespace ExamSystem.TeaFrm
             // 
             this.paperNameLab.AutoSize = true;
             this.paperNameLab.ForeColor = System.Drawing.Color.White;
-            this.paperNameLab.Location = new System.Drawing.Point(169, 71);
+            this.paperNameLab.Location = new System.Drawing.Point(53, 57);
             this.paperNameLab.Name = "paperNameLab";
             this.paperNameLab.Size = new System.Drawing.Size(82, 15);
             this.paperNameLab.TabIndex = 0;
@@ -55,7 +55,7 @@ namespace ExamSystem.TeaFrm
             // 
             // searchBtn
             // 
-            this.searchBtn.Location = new System.Drawing.Point(455, 71);
+            this.searchBtn.Location = new System.Drawing.Point(339, 57);
             this.searchBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(75, 22);
@@ -66,7 +66,7 @@ namespace ExamSystem.TeaFrm
             // 
             // paperNameTxt
             // 
-            this.paperNameTxt.Location = new System.Drawing.Point(257, 68);
+            this.paperNameTxt.Location = new System.Drawing.Point(141, 54);
             this.paperNameTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.paperNameTxt.Name = "paperNameTxt";
             this.paperNameTxt.Size = new System.Drawing.Size(179, 25);
@@ -81,7 +81,7 @@ namespace ExamSystem.TeaFrm
             this.searchResultLv.ContextMenuStrip = this.rightClick;
             this.searchResultLv.FullRowSelect = true;
             this.searchResultLv.HideSelection = false;
-            this.searchResultLv.Location = new System.Drawing.Point(125, 122);
+            this.searchResultLv.Location = new System.Drawing.Point(29, 105);
             this.searchResultLv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchResultLv.MultiSelect = false;
             this.searchResultLv.Name = "searchResultLv";
@@ -124,7 +124,9 @@ namespace ExamSystem.TeaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(567, 427);
             this.Controls.Add(this.searchResultLv);
             this.Controls.Add(this.paperNameTxt);
             this.Controls.Add(this.searchBtn);

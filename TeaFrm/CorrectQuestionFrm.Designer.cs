@@ -44,20 +44,20 @@ namespace ExamSystem.TeaFrm
             // questionStemLab
             // 
             this.questionStemLab.AutoSize = true;
+            this.questionStemLab.BackColor = System.Drawing.Color.Transparent;
             this.questionStemLab.ForeColor = System.Drawing.Color.White;
-            this.questionStemLab.Location = new System.Drawing.Point(122, 44);
-            this.questionStemLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.questionStemLab.Location = new System.Drawing.Point(57, 55);
             this.questionStemLab.Name = "questionStemLab";
-            this.questionStemLab.Size = new System.Drawing.Size(29, 12);
+            this.questionStemLab.Size = new System.Drawing.Size(37, 15);
             this.questionStemLab.TabIndex = 0;
             this.questionStemLab.Text = "题目";
             // 
             // submitBtn
             // 
-            this.submitBtn.Location = new System.Drawing.Point(331, 404);
-            this.submitBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.submitBtn.Location = new System.Drawing.Point(335, 494);
+            this.submitBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.submitBtn.Name = "submitBtn";
-            this.submitBtn.Size = new System.Drawing.Size(56, 21);
+            this.submitBtn.Size = new System.Drawing.Size(75, 26);
             this.submitBtn.TabIndex = 2;
             this.submitBtn.Text = "提交";
             this.submitBtn.UseVisualStyleBackColor = true;
@@ -65,58 +65,57 @@ namespace ExamSystem.TeaFrm
             // 
             // questionStemTxt
             // 
-            this.questionStemTxt.Location = new System.Drawing.Point(170, 41);
-            this.questionStemTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.questionStemTxt.Location = new System.Drawing.Point(108, 55);
+            this.questionStemTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.questionStemTxt.Name = "questionStemTxt";
-            this.questionStemTxt.Size = new System.Drawing.Size(374, 203);
+            this.questionStemTxt.Size = new System.Drawing.Size(497, 253);
             this.questionStemTxt.TabIndex = 3;
             this.questionStemTxt.Text = "";
             // 
             // questionAnswerTxt
             // 
-            this.questionAnswerTxt.Location = new System.Drawing.Point(172, 267);
-            this.questionAnswerTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.questionAnswerTxt.Location = new System.Drawing.Point(110, 336);
+            this.questionAnswerTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.questionAnswerTxt.Name = "questionAnswerTxt";
-            this.questionAnswerTxt.Size = new System.Drawing.Size(372, 102);
+            this.questionAnswerTxt.Size = new System.Drawing.Size(495, 126);
             this.questionAnswerTxt.TabIndex = 4;
             this.questionAnswerTxt.Text = "";
             // 
             // questionAnswerLab
             // 
             this.questionAnswerLab.AutoSize = true;
+            this.questionAnswerLab.BackColor = System.Drawing.Color.Transparent;
             this.questionAnswerLab.ForeColor = System.Drawing.Color.White;
-            this.questionAnswerLab.Location = new System.Drawing.Point(107, 269);
-            this.questionAnswerLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.questionAnswerLab.Location = new System.Drawing.Point(37, 336);
             this.questionAnswerLab.Name = "questionAnswerLab";
-            this.questionAnswerLab.Size = new System.Drawing.Size(53, 12);
+            this.questionAnswerLab.Size = new System.Drawing.Size(67, 15);
             this.questionAnswerLab.TabIndex = 5;
             this.questionAnswerLab.Text = "题目答案";
             // 
             // scoreNup
             // 
-            this.scoreNup.Location = new System.Drawing.Point(224, 404);
-            this.scoreNup.Margin = new System.Windows.Forms.Padding(2);
+            this.scoreNup.Location = new System.Drawing.Point(193, 494);
+            this.scoreNup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.scoreNup.Name = "scoreNup";
-            this.scoreNup.Size = new System.Drawing.Size(90, 21);
+            this.scoreNup.Size = new System.Drawing.Size(120, 25);
             this.scoreNup.TabIndex = 6;
             // 
             // scoreLab
             // 
             this.scoreLab.AutoSize = true;
             this.scoreLab.ForeColor = System.Drawing.Color.White;
-            this.scoreLab.Location = new System.Drawing.Point(168, 406);
-            this.scoreLab.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.scoreLab.Location = new System.Drawing.Point(118, 497);
             this.scoreLab.Name = "scoreLab";
-            this.scoreLab.Size = new System.Drawing.Size(29, 12);
+            this.scoreLab.Size = new System.Drawing.Size(37, 15);
             this.scoreLab.TabIndex = 7;
             this.scoreLab.Text = "分数";
             // 
             // nextBtn
             // 
-            this.nextBtn.Location = new System.Drawing.Point(454, 406);
-            this.nextBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.nextBtn.Location = new System.Drawing.Point(499, 497);
+            this.nextBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nextBtn.Name = "nextBtn";
-            this.nextBtn.Size = new System.Drawing.Size(56, 19);
+            this.nextBtn.Size = new System.Drawing.Size(75, 24);
             this.nextBtn.TabIndex = 8;
             this.nextBtn.Text = "下一题";
             this.nextBtn.UseVisualStyleBackColor = true;
@@ -124,9 +123,11 @@ namespace ExamSystem.TeaFrm
             // 
             // CorrectQuestionFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(660, 457);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(667, 537);
             this.Controls.Add(this.nextBtn);
             this.Controls.Add(this.scoreLab);
             this.Controls.Add(this.scoreNup);
@@ -137,7 +138,7 @@ namespace ExamSystem.TeaFrm
             this.Controls.Add(this.questionStemLab);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "CorrectQuestionFrm";
             this.Text = "批改试卷";
